@@ -1,0 +1,38 @@
+.Button{
+    -fx-background-color:  #383838;
+    -fx-text-fill: white;
+    -fx-border-color: #888888;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-font-weight: bold;
+}
+
+.Button:hover{
+    -fx-background-color:  white;
+    -fx-text-fill: black;
+    -fx-border-color: #cfcfcf;
+}
+
+.Button:pressed{
+    -fx-background-color:  #777777;
+    -fx-text-fill: #cfcfcf;
+    -fx-border-color:#cfcfcf;
+}
+
+ColorPicker{
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-background-color: "#383838";
+    -fx-text-fill: #cfcfcf;
+    -fx-border-color: #888888 ;
+}
+
+ColorPicker .color-picker-label .text {
+    -fx-fill: #cfcfcf;
+    -fx-font-weight: bold;
+}
+
+Label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

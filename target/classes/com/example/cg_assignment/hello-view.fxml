@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704.0" prefWidth="1028.0" style="-fx-background-color: #181818;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cg_assignment.HelloController">
+   <center>
+      <Canvas fx:id="img" height="607.0" width="1029.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="823.0" spacing="20.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="pos_text" alignment="CENTER" contentDisplay="CENTER" prefHeight="0.0" prefWidth="138.0" style="-fx-background-color: #383838;" textFill="WHITE">
+               <padding>
+                  <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Button fx:id="clear_bt" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="Button" text="CLEAR">
+               <HBox.margin>
+                  <Insets left="45.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="plus" mnemonicParsing="false" styleClass="Button" text="+">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="minus" mnemonicParsing="false" styleClass="Button" text="-">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="curve_bt" mnemonicParsing="false" styleClass="Button" text="CURVE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Points:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ColorPicker fx:id="point_clr" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Line:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <ColorPicker fx:id="line_clr" />
+            <Circle fx:id="indicator" fill="#8e8e8e" radius="11.0" stroke="BLACK" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Circle>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="823.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="indicator4" fill="#8e8e8e" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="indicator1" fill="#8e8e8e" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="top_lab" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="696.0" text="asdas" textFill="WHITE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Circle fx:id="indicator2" fill="#8e8e8e" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="indicator3" fill="#8e8e8e" radius="11.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
